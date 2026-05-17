@@ -16,18 +16,4 @@ class Solution {
         return false;
         
     }
-    public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        int y = sc.nextInt();
-        int matrix[][] = new int[x][y];
-        int n = matrix.length, m = matrix[0].length;
-        for (int i=0; i<n; i++){
-            for(int j=0; j<m; j++){
-                matrix[i][j] = sc.nextInt();
-            }
-        }
-        int target = sc.nextInt();
-        searchMatrix(matrix, target);
-    }
 }
